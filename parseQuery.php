@@ -232,7 +232,7 @@ class parseQuery extends parseRestClient{
 		if(isset($key) && isset($value)){
 			$this->_query[$key] = array(
 				'$regex' => $value,
-				'options' => $options
+				'$options' => $options
 			);
 		}	
 		else{
